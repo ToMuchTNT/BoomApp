@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+<main>
+    <div id="form-container">
+        <div>
+            <h1 id="sign-up-title">Log in</h1>
+        </div>
+        <div>
+            <form id="signup-form">
+                <label for="username">Username:</label><br>
+                <input type="text" id='username-input'><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id='password-input'><br><br>
+                <script>
+                    function logIn () {
+                        console.log("You are logged in")
+                    }
+                </script>
+                <input type="submit" id="submit-button" value="Submit" onclick="getDetails()">
+            </form>
+        </div>
+    </div>
+</main>
+
+{% endblock content %}
